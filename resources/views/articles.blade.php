@@ -14,20 +14,21 @@
         div a{
             color: red;
         }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>{{ 'home' }}</h1>
-        <h4><a href="{{ route('sezioneArticoli') }}">Vai alla sezione articoli</a></h4>
+    <header id="header">
         <h4><a href="{{ route('photo') }}">Vai alla sezione foto</a></h4>
+        <h4><a href="{{ route('home') }}">Torna alla home</a></h4>
     </header>
 
     <main>
         <h1>Articoli:</h1>
-        <div>
-            <a href="{{ route('home') }}">Torna alla home</a>
-        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quasi accusantium, in dicta earum dignissimos autem expedita excepturi sapiente. Eveniet molestias tempore sequi corrupti at nulla qui animi, blanditiis omnis.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos expedita cupiditate velit unde eaque reiciendis numquam. Nihil recusandae cupiditate unde? Similique deserunt est eos quod odio necessitatibus tenetur non alias!
             Fugiat doloremque tempora repellendus, ullam cupiditate earum facilis neque sequi ducimus. Doloremque non dolorum fugit ratione. Dignissimos, in tempore voluptate omnis optio eius est dolores ipsam. Recusandae alias repellendus culpa.
@@ -38,6 +39,6 @@
             A, esse magni, quam doloremque natus obcaecati, eaque cum velit odit sunt ab dolorem sit consequatur adipisci laudantium maiores iste sequi. Quasi, nostrum autem ducimus dolores consectetur nemo dicta nesciunt.
         </p>
     </main>
-    
+
 </body>
 </html>
