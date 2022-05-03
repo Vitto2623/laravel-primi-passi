@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $array = [
-        'home'
+        'dato dinamico'
     ];
     return view('home', $array);
 })->name('home');

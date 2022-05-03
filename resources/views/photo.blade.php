@@ -8,26 +8,22 @@
     <title>Photo</title>
     <style>
         main{
-            text-align: center
-        }
-        header{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            width: 100%
         }
 
-        a{
-            margin: 5px;
+        #special{
+            display: block;
+            color: red
         }
     </style>
 </head>
 <body>
-    <header>
-        <h4><a href="{{ route('sezioneArticoli') }}">Vai alla sezione articoli</a></h4>
-        <a href="{{ route('home') }}">Torna alla home</a>
-    </header>
+    
+    @include ('home')
 
     <main>
+        <a id="special" href="{{ route('home') }}">Torna alla home</a>
         <img src="{{ URL::asset('/img/formato-immagini-webp_710.jpeg') }}" alt="">
     </main>
 </body>

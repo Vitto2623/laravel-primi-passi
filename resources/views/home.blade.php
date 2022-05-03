@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>{{ 'home' }}</h1>
+        <h1>{{ 'dato dinamico' }}</h1>
         <h4><a href="{{ route('sezioneArticoli') }}">Vai alla sezione articoli</a></h4>
         <h4><a href="{{ route('photo') }}">Vai alla sezione foto</a></h4>
     </header>

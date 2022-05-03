@@ -7,27 +7,15 @@
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
     <title>Articles</title>
     <style>
-        div{
-            width: 100%;
-            text-align: center;
-        }
-        div a{
-            color: red;
-        }
-        header{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        main{
+            text-align: center
         }
     </style>
 </head>
 <body>
-    <header id="header">
-        <h4><a href="{{ route('photo') }}">Vai alla sezione foto</a></h4>
-        <h4><a href="{{ route('home') }}">Torna alla home</a></h4>
-    </header>
-
+        @include('home')
     <main>
+        <a href="{{ route('home') }}">Torna alla home</a>
         <h1>Articoli:</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quasi accusantium, in dicta earum dignissimos autem expedita excepturi sapiente. Eveniet molestias tempore sequi corrupti at nulla qui animi, blanditiis omnis.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos expedita cupiditate velit unde eaque reiciendis numquam. Nihil recusandae cupiditate unde? Similique deserunt est eos quod odio necessitatibus tenetur non alias!
